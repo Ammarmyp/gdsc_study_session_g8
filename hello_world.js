@@ -1,1 +1,1 @@
-console.log("Hello there! GDSC study session G8");
+console.log("Hello there! GDSC study session GROUP-8");

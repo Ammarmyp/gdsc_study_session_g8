@@ -1,0 +1,15 @@
+{
+  "name": "reacttodolist",
+  "version": "4.1.0",
+  "description": "todolistReact",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.0.10"
+  }
+}

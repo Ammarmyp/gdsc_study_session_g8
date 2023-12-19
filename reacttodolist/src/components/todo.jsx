@@ -36,7 +36,7 @@ const TodoList = () => {
         onChange={handleInputChange}
         placeholder="Add a task"
       />
-      <button> onClick={handleAddTodo}Add </button>
+      <button onClick={handleAddTodo}>Add </button>
       <ul>
         {todos.map((todo, index) => (
           <li key={index}>
@@ -45,10 +45,14 @@ const TodoList = () => {
               checked={todo.completed}
               onChange={() => handleToggleComplete(index)}
             />
-            <span style={{textDecoration: todo.completed ? 'line-through' : 'none'}}>
-                {todo.text}
+            <span
+              style={{
+                textDecoration: todo.completed ? "line-through" : "none",
+              }}
+            >
+              {todo.text}
             </span>
-            <button onClick={() => hnadleDeleteTodo (index)} >Delete</button>
+            <button onClick={() => hnadleDeleteTodo(index)}>Delete</button>
           </li>
         ))}
       </ul>

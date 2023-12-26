@@ -47,10 +47,10 @@ const TodoList = () => {
             />
             <span
               style={{
-                textDecoration: todo.completed ? "line-through" : "none",
+                textDecoration: item.completed ? "line-through" : "none",
               }}
             >
-              {todo.text}
+              {item.text}
             </span>
             <button onClick={() => hnadleDeleteTodo(index)}>Delete</button>
           </li>

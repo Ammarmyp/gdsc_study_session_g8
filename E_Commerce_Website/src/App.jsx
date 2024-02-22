@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HomePageDescription from "./components/HomepageDescription";
 import Sliders from "./components/Sliders";
@@ -25,6 +26,7 @@ function App() {
         heading={"Our products"}
         btnText={"products btn"}
       />
+      <Footer/>
     </>
   );
 }

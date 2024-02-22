@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import HomePageCategories from "./components/HomePageCategories";
 import Sliders from "./components/Sliders";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Header />
       <Sliders />
+      <HomePageCategories/>
     </>
   );
 }

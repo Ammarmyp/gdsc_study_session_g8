@@ -38,10 +38,10 @@ function Sliders() {
   };
 
   return (
-    <div className="w-full h-[600px] relative bg-cover bg-center  m-auto px-4 group">
-      <div className="w-full h-full rounded-2xl bg-center bg-cover transition-all duration-300">
+    <div className="w-full  h-[612px] relative bg-cover bg-center  m-auto px-4 group mb-10">
+      <div className="w-full h-full rounded-2xl bg-center bg-cover transition-all duration-300 p-2">
         <img
-          className="w-full h-full items-center mx-auto rounded object-cover duration-700 transition-all"
+          className="w-full h-full items-center mx-auto rounded object-center object-cover duration-700 transition-all"
           src={itemImages[currentIndex].url}
         />
       </div>

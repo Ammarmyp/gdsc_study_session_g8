@@ -1,6 +1,7 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HomePageDescription from "./components/HomepageDescription";
+import ItemsPage from "./components/ItemsPage";
 import Sliders from "./components/Sliders";
 
 function App() {
@@ -26,7 +27,8 @@ function App() {
         heading={"Our products"}
         btnText={"products btn"}
       />
-      <Footer/>
+      <ItemsPage />
+      <Footer />
     </>
   );
 }

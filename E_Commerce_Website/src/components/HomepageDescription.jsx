@@ -10,7 +10,7 @@ const HomePageDescription = ({ description, heading, btnText }) => {
         <p className="text-lg sm:text-sm">{description}</p>
       </div>
       <Button text={btnText} />
-      <div className="flex flex-wrap justify-center items-center sm:w-full">
+      <div className="md:flex-nowrap flex flex-wrap justify-center items-center sm:w-full">
         <ProductCard />
         <ProductCard />
         <ProductCard />

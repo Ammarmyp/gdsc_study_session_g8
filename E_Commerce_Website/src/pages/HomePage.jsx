@@ -17,17 +17,17 @@ const HomePage = () => {
         heading={"Categories"}
         btnText={"Category btn"}
       />
-      {/* <HomePageDescription
+      <HomePageDescription
         description={"description for the lower section"}
         heading={"Our latest arrival"}
         btnText={"arrival btn"}
-      /> */}
-      {/* <HomePageDescription
+      /> 
+      <HomePageDescription
         description={"Our products description"}
         heading={"Our products"}
         btnText={"products btn"}
-      /> */}
-      {/* <Footer /> */}
+      />
+       {/* <Footer /> */}
     </>
   );
 };

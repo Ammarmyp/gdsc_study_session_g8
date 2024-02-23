@@ -1,6 +1,7 @@
 import React from "react";
 import { BsSearch } from "react-icons/bs";
 
+
 const Search = () => {
   return (
     <div className="flex justify-between relative">
@@ -16,3 +17,4 @@ const Search = () => {
 };
 
 export default Search;
+

@@ -27,7 +27,7 @@ const ItemsPage = () => {
         </div>
       </div>
 
-      <div>
+      <div className="flex justify-center items-center flex-wrap">
         {items.map((item) => (
           <ProductCard key={item.id} title={item.title} image={item.image} />
         ))}

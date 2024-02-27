@@ -3,4 +3,4 @@ export default [
     "jewelery",
     "men's clothing",
     "women's clothing"
-]
+] 

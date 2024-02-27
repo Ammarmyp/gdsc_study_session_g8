@@ -1,14 +1,13 @@
 import React from "react";
-import items from "../data/items";
 import categories from "../data/categories";
 
-const Filters = () => {
+const Filters = ({onSelectCategory}) => {
   return (
     <ul className="flex justify-center items-center gap-4">
       {categories.map((category) => (
-        <li className="border" key={category}>
+        <button onClick={() => onSelectCategory(category)} className="border" key={category}>
           {category}{" "}
-        </li>
+        </button>
       ))}
     </ul>
   );

@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/Header";
 import Search from "../components/Search";
 import Filters from "../components/Filters";
-import ProductCard from "../components/ProductCard";
-import items from "../data/items";
+import ItemsGrid from "../components/ItemsGrid";
 
 const ItemsPage = () => {
+  const [selectedCategory, setCategory] = useState(null);
+
   return (
     <>
       <div>
@@ -23,15 +24,10 @@ const ItemsPage = () => {
           </div>
         </div>
         <div className="flex justify-between items-center my-3 mx-3">
-          <Filters />
+          <Filters onSelectCategory={(category) => setCategory(category)} />
         </div>
       </div>
-
-      <div className="flex justify-center items-center flex-wrap">
-        {items.map((item) => (
-          <ProductCard key={item.id} title={item.title} image={item.image} />
-        ))}
-      </div>
+      <ItemsGrid selectedCategory={selectedCategory} />
     </>
   );
 };

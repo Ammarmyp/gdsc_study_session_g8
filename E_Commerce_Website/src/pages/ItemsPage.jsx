@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Search from "../components/Search";
 import Filters from "../components/Filters";
 import ItemsGrid from "../components/ItemsGrid";
+import Footer from './../components/Footer';
 
 const ItemsPage = () => {
   const [selectedCategory, setCategory] = useState(null);
@@ -33,6 +34,7 @@ const ItemsPage = () => {
         </div>
       </div>
       <ItemsGrid selectedCategory={selectedCategory} />
+      <Footer/>
     </>
   );
 };

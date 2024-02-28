@@ -1,10 +1,8 @@
 import React from "react";
 import Button from "./Button";
-import ProductCard from "./ProductCard";
-import { Link } from 'react-router-dom';
-import ItemsPage from "../pages/ItemsPage";
 
-const HomePageDescription = ({ description, heading, btnText }) => {
+const HomePageDescription = ({ description, heading, btnText, category }) => {
+
   return (
     <div className="flex flex-col justify-center items-center my-5 w-full">
       <h2 className="font-semibold text-2xl mb-4">{heading}</h2>
@@ -13,9 +11,7 @@ const HomePageDescription = ({ description, heading, btnText }) => {
       </div>
       <Button text={btnText}  />
       <div className="md:flex-nowrap flex flex-wrap justify-center items-center sm:w-full">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        {category}
       </div>
     </div>
   );

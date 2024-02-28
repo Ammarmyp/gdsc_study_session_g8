@@ -1,8 +1,8 @@
 import React from "react";
 
-const ProductCard = ({ title, image }) => {
+const ProductCard = ({ title, image, cart }) => {
   return (
-    <div className="bg-slate-100 border-solid border-[2px] border-slate-200 sm:w-[300px] w-[270px] h-[320px]  justify-center items-center  mx-2 p-[2px] my-4 rounded-xl transition-all">
+    <div className="bg-slate-100 border-solid border-[2px] border-slate-200 sm:w-[300px] w-[270px] h-[340px]  justify-center items-center  mx-2 p-[2px] my-4 rounded-xl transition-all">
       <div className="w-full h-[230px] rounded-3xl bg-center bg-cover overflow-hidden transition-all duration-300 mb-2">
         <img
           src={image}
@@ -10,8 +10,8 @@ const ProductCard = ({ title, image }) => {
         />
       </div>
       <div className=" flex justify-between items-center mx-1 mt-2 p-2 text-sm font-medium">
-        <h3 className="w-[210px] text-left">{title}</h3>
-        <h3>Cart</h3>
+        <h3 className="w-[210px] text-center ">{title}</h3>
+        {cart && <h3>Cart</h3>}
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 export default [
+    // "All",
     "electronics",
     "jewelery",
     "men's clothing",

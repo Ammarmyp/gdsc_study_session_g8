@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductCard = ({ title, image }) => {
   return (
-    <div className="bg-slate-100 border-solid border-[2px] border-slate-200 sm:w-[300px] w-[270px] h-[320px]  justify-center items-center  mx-2 p-[2px] my-4 rounded-xl">
+    <div className="bg-slate-100 border-solid border-[2px] border-slate-200 sm:w-[300px] w-[270px] h-[320px]  justify-center items-center  mx-2 p-[2px] my-4 rounded-xl transition-all">
       <div className="w-full h-[230px] rounded-3xl bg-center bg-cover overflow-hidden transition-all duration-300 mb-2">
         <img
           src={image}

@@ -23,6 +23,11 @@ const ItemsPage = () => {
             <Search />
           </div>
         </div>
+
+        <h2 className="m-3 p-1 text-lg transition-all">
+          {" "}
+          {selectedCategory ? selectedCategory : null} Category
+        </h2>
         <div className="flex justify-between items-center my-3 mx-3">
           <Filters onSelectCategory={(category) => setCategory(category)} />
         </div>

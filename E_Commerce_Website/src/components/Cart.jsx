@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCartShopping } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Cart = ({ cartItems }) => {
   const addToCart = (product) => {
@@ -19,7 +20,11 @@ const Cart = ({ cartItems }) => {
 
   return (
     <button className="flex">
-      <p>+</p> <FaCartShopping className="size-6" />
+      <p>+</p>
+      <Link to={"/CartPage"}>
+        {" "}
+        <FaCartShopping className="size-6" />
+      </Link>
     </button>
   );
 };

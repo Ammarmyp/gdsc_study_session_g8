@@ -15,7 +15,7 @@ const ItemsGrid = ({ selectedCategory, setSelectedItem }) => {
           to={`/Details/${item.id}`}
           key={item.id}
         >
-          <ProductCard title={item.title}  image={item.image} />
+          <ProductCard title={item.title}  image={item.image}  />
         </Link>
       ))}
     </div>

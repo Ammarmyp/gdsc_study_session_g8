@@ -11,12 +11,15 @@ import {
 import ItemsPage from "./pages/ItemsPage";
 import HomePage from "./pages/HomePage";
 import Details from "./pages/Details";
+import CartPage from "./pages/CartPage";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <HomePage />,
+      errorElement: <ErrorPage />,
     },
     {
       path: "ItemsPage",
@@ -24,8 +27,12 @@ function App() {
     },
     {
       path: "Details/:itemId",
-      element: <Details/>
-    }
+      element: <Details />,
+    },
+    {
+      path: "CartPage",
+      element: <CartPage />,
+    },
   ]);
 
   return (

@@ -15,9 +15,9 @@ const HomePage = () => {
       <Sliders />
       <div></div>
       <HomePageDescription
-        description={"description for the upper section"}
+        description={"check out the different categories"}
         heading={"Categories"}
-        btnText={"Category btn"}
+        btnText={"view categories"}
         category={categoryCard.map((categoryCard) => (
           <ProductCard title={categoryCard.name} image={categoryCard.image} />
         ))}

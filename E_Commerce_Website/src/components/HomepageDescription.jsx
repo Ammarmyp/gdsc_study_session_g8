@@ -9,7 +9,7 @@ const HomePageDescription = ({ description, heading, btnText, category }) => {
       <div className="max-w-[612px] text-center">
         <p className="text-lg sm:text-sm">{description}</p>
       </div>
-      <Button text={btnText}  />
+      <Button text={btnText}   />
       <div className="md:flex-nowrap flex flex-wrap justify-center items-center sm:w-full">
         {category}
       </div>

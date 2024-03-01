@@ -4,21 +4,33 @@ import {
   Link,
   Routes,
   BrowserRouter,
+  createBrowserRouter,
+  RouterProvider,
 } from "react-router-dom";
 
 import ItemsPage from "./pages/ItemsPage";
 import HomePage from "./pages/HomePage";
+import Details from "./pages/Details";
 
 function App() {
-   
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <HomePage />,
+    },
+    {
+      path: "ItemsPage",
+      element: <ItemsPage />,
+    },
+    {
+      path: "Details/:itemId",
+      element: <Details/>
+    }
+  ]);
+
   return (
     <>
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<HomePage />} />
-          <Route path="/ItemsPage" element={<ItemsPage />} />
-        </Routes>
-      </Router>
+      <RouterProvider router={router} />
     </>
   );
 }

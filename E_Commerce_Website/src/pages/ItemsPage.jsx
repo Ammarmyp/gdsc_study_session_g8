@@ -7,11 +7,13 @@ import Footer from './../components/Footer';
 
 const ItemsPage = () => {
   const [selectedCategory, setCategory] = useState(null);
+  const [selectedItem, setSelectedItem] = useState(null);
+
 
   return (
     <>
       <div>
-        <Header />
+        <Header  />
         <div className=" flex  justify-between items-center sm:flex-row   flex-col ">
           <div className="flex flex-col justify-starts items-left mx-2 bg-blue-600 ">
             <h1>Shop</h1>
@@ -33,7 +35,7 @@ const ItemsPage = () => {
           <Filters onSelectCategory={(category) => setCategory(category)} />
         </div>
       </div>
-      <ItemsGrid selectedCategory={selectedCategory} />
+      <ItemsGrid selectedCategory={selectedCategory} setSelectedItem={setSelectedItem}/>
       <Footer/>
     </>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import items from "../data/items";
 import { useParams } from "react-router-dom";
+import Cart from "../components/Cart";
 
 const Details = () => {
   const { itemId } = useParams();
@@ -29,9 +30,12 @@ const Details = () => {
             <h2 className="text-xl font-semibold my-4 text-wrap ">
               {selectedItem.title}
             </h2>
-            <p> $ {selectedItem.price}</p>
-            <p>{selectedItem.description}</p>
+            <div className="flex gap-4">
+              <p> $ {selectedItem.price}</p>
+              <Cart />
+            </div>
             <p>{selectedItem.rating.rate}</p>
+            <p>{selectedItem.description}</p>
           </div>
         </div>
       </div>

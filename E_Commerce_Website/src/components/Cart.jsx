@@ -1,27 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaCartShopping } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
-const Cart = ({ cartItems }) => {
-  const addToCart = (product) => {
-    const existingItem = cartItems.find((item) => item.id === product.id);
-    if (existingItem) {
-      const latestCartUpdate = cartItems.map((item) =>
-        item.id === product.id
-          ? {
-              ...cartItems,
-              quantity: item.quantity + 1,
-            }
-          : item
-      );
-    }
-    console.log(latestCartUpdate);
-  };
+const Cart = ({ onAddToCart, onRemoveFromCart, cartItems }) => {
+  const [inCart, setInCart] = useState(cartItems);
 
   return (
-    <button className="flex">
+    <button className="flex z-10">
+      <button onClick={() => setInCart(onAddToCart)}>Add to Cart </button>
       <p>+</p>
-      <Link to={"/CartPage"}>
+      {console.log(cartItems)}
+      <Link to={`/CartPage/${cartItems}`}>
         {" "}
         <FaCartShopping className="size-6" />
       </Link>

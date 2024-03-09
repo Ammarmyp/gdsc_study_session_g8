@@ -1,6 +1,6 @@
 import React from "react";
-
-const ProductCard = ({ title, image, cart, onClick }) => {
+import Cart from "./Cart";
+const ProductCard = ({ title, image, cart, onClick, onAddToCart, onRemoveFromCart, cartItems }) => {
   return (
     <div
       onClick={onClick}
@@ -14,7 +14,7 @@ const ProductCard = ({ title, image, cart, onClick }) => {
       </div>
       <div className=" flex justify-between items-center mx-1 mt-2 p-2 text-sm font-medium">
         <h3 className="w-[210px] text-center ">{title}</h3>
-        {cart && <h3>Cart</h3>}
+          <Cart  onAddToCart={onAddToCart} onRemoveFromCart={onRemoveFromCart} cartItems={cartItems}/>
       </div>
     </div>
   );

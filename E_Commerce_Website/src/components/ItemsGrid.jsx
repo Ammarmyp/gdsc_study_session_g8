@@ -27,15 +27,15 @@ const ItemsGrid = ({ selectedCategory, setSelectedItem }) => {
   return (
     <div className="flex justify-center items-center flex-wrap">
       {(selectedCategory ? filteredItems : items).map((item) => (
-        <Link to={`/Details/${item.id}`} key={item.id}>
+       
           <ProductCard
             title={item.title}
             image={item.image}
+            id={item.id}
             onAddToCart={handleAddToCart}
             onRemoveFromCart={handleRemove}
             cartItems={cartItems}
           />
-        </Link>
       ))}
     </div>
   );
